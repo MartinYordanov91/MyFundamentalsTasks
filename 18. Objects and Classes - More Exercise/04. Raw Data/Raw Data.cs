@@ -19,7 +19,11 @@ namespace _04._Raw_Data
         {
             List<ModelCar> cars = new List<ModelCar>();
             AddCarsData(cars);
+            PrindValideModel(cars);
+        }
 
+        public static void PrindValideModel(List<ModelCar> cars)
+        {
             string comand = Console.ReadLine();
 
             if (comand == "fragile")
